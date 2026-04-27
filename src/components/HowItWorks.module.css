@@ -1,0 +1,126 @@
+.section {
+  padding: 0 0 100px;
+}
+
+.inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.header {
+  margin-bottom: 64px;
+}
+
+.eyebrow {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #b5f000;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.eyebrow::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: #b5f000;
+}
+
+.title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: clamp(38px, 5vw, 64px);
+  line-height: 0.92;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.green { color: #b5f000; }
+
+.subtitle {
+  font-size: 15px;
+  color: #888;
+  max-width: 460px;
+  line-height: 1.75;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: #1e1e1e;
+  border: 1px solid #1e1e1e;
+}
+
+.step {
+  background: #111;
+  padding: 44px 32px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.25s;
+}
+.step:hover { background: #161616; }
+
+.stepNumBg {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 88px;
+  color: rgba(255,255,255,0.03);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: #b5f000;
+  color: #000;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 24px;
+  flex-shrink: 0;
+}
+
+.badgeAlert {
+  background: #e8002a;
+  color: #fff;
+}
+
+.stepTitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  color: #f0f0f0;
+}
+
+.stepDesc {
+  font-size: 14px;
+  color: #888;
+  line-height: 1.75;
+}
+
+@media (max-width: 1024px) {
+  .stepsGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .inner { padding: 0 24px; }
+  .stepsGrid { grid-template-columns: 1fr; }
+  .section { padding-bottom: 60px; }
+}
