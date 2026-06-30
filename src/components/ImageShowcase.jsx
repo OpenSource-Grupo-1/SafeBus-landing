@@ -1,9 +1,9 @@
 import { useRef, useState } from 'react'
 import useFadeUp from '../hooks/useFadeUp'
 import alertLogs from '../assets/images/alertLogs.jpg'
-import apiConsole from '../assets/images/ApiConsole.jpg'
 import controlCenter from '../assets/images/ControlCenter.jpg'
 import dashboard from '../assets/images/dashboard.jpg'
+import panicSignal from '../assets/images/panicSignal.jpg'
 import passengerCounter from '../assets/images/passengerCounter.jpg'
 import styles from './ImageShowcase.module.css'
 
@@ -12,7 +12,7 @@ const IMAGES = [
   { src: dashboard, alt: 'Dashboard operativo SafeBus', label: 'Dashboard' },
   { src: passengerCounter, alt: 'Conteo de pasajeros SafeBus', label: 'Passenger Counter' },
   { src: alertLogs, alt: 'Registro de alertas SafeBus', label: 'Alert Logs' },
-  { src: apiConsole, alt: 'Consola API SafeBus', label: 'API Console' },
+  { src: panicSignal, alt: 'Señal de pánico SafeBus', label: 'Panic Signal' },
 ]
 
 export default function ImageShowcase() {
