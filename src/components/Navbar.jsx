@@ -42,7 +42,9 @@ export default function Navbar() {
         ))}
       </ul>
 
-      <button className={styles.btnIngresar}>INGRESAR</button>
+      <a className={styles.btnIngresar} href="https://safebus-frontend.vercel.app/conductor/login">
+        INGRESAR
+      </a>
 
       <button className={styles.hamburger} onClick={() => setMenuOpen(p => !p)} aria-label="Menu">
         <span className={menuOpen ? styles.barOpen : ''} />
